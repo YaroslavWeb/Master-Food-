@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" href="./assets/favicon/icon.ico" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MasterFood</title>
+
+  <link rel="stylesheet" href="libs/font-awesome/css/fontawesome-all.min.css">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="game.css">
+
+</head>
+
+<body>
+  <!--MENU-->
+  <div id="menu">
+    <div class="NamePlayer"><input class="inputName" type="text" placeholder="Ваше имя"></div>
+      <div class="startGame">Играть</div>
+    <div class="option">
+      <i class="fal fa-volume-up sounds-option"></i>
+      <i class="fas fa-coffee support-option"></i>
+      <i class="fa fa-question help-option"></i>
+      <!--<i class="fal fa-volume-mute"></i>-->
+    </div>
+    <div class="version">v0.6.34</div>
+    <div class="attention">Если игра плохо работате, то обновите свой <br>браузер до последней версии или скачайте другой.</div>
+  </div>
+
+  <!--GAME-->
+  <div id="game">
+    <div class="game-pause pause"></div>
+
+    <div class="game-menu">
+      <p>Ваш лучший счёт</p>
+      <div class="bestScore">0</div>
+      <ul>
+        <li class="replay"></li>
+        <li class="backMenu"></li>
+        <li class="msc mscOn"></li>
+      </ul>
+    </div>
+    
+    <div class="interfacePlayer">
+      <div class="progress hearts">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    
+
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="libs/js/jquery-3.3.1.min.js"></script>
+  <script src="libs/js/device.js"></script>
+
+  <script src="levels/Single/Stage01.js"></script>
+  <script src="levels/Single/Stage02.js"></script>
+  
+  <script src="controller.js"></script>
+  <script src="sound.js"></script>
+  <script src="menu.js" charset="utf-8"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
